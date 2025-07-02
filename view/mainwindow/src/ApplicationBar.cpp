@@ -45,6 +45,12 @@ ApplicationBar::ApplicationBar(QWidget* parent)
     aiChat->setPixmapScale(0.77);
     addItem(aiChat);
 
+    auto adminItem = new ApplicationBarItem(
+            QPixmap(":/resources/icon/skull.png"),
+            QPixmap(":/resources/icon/hovered_skull.png"));
+    adminItem->setPixmapScale(0.7);
+    addItem(adminItem);
+
     auto notItem = new ApplicationBarItem(
             QPixmap(":/resources/icon/unselected_nether.png"),
             QPixmap(":/resources/icon/nether.png"));

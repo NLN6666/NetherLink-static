@@ -37,6 +37,9 @@ NetherLink‑static 是一个基于 Qt 的聊天社交客户端静态演示，**
 - 🔹 **AI 对话**
     - 演示与 AI 聊天机器人的对话界面
     - 支持文字互动
+- 🔹 **管理员面板**
+    - 查看并管理本地用户信息
+    - 管理员账号密码存放于 `admin_credentials.ini`，可直接编辑
 
 - 🔹 **界面美化 & 动画**
     - Minecraft 像素风图标与配色
@@ -99,6 +102,8 @@ cmake --build . --config Release
 # 运行可执行文件
 ./NetherLink-static
 ```
+
+管理员账号密码存放于 `admin_credentials.ini`，修改后重新启动即可生效。
 
 ## ⚠️ 已知问题
 

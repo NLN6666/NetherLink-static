@@ -18,6 +18,7 @@ include_directories(${PROJECT_SOURCE_DIR}/view/mainwindow/include)
 include_directories(${PROJECT_SOURCE_DIR}/view/aichat/include)
 include_directories(${PROJECT_SOURCE_DIR}/view/chat/include)
 include_directories(${PROJECT_SOURCE_DIR}/view/post/include)
+include_directories(${PROJECT_SOURCE_DIR}/view/admin/include)
 include_directories(${PROJECT_SOURCE_DIR}/view/friend/include)
 include_directories(${PROJECT_SOURCE_DIR}/data/include)
 include_directories(${PROJECT_SOURCE_DIR}/entity)
@@ -38,6 +39,8 @@ file(GLOB VIEW_FRIEND_HEADERS     "${CMAKE_CURRENT_SOURCE_DIR}/view/friend/inclu
 file(GLOB VIEW_FRIEND_SOURCES     "${CMAKE_CURRENT_SOURCE_DIR}/view/friend/src/*.cpp")
 file(GLOB VIEW_POST_HEADERS       "${CMAKE_CURRENT_SOURCE_DIR}/view/post/include/*.h")
 file(GLOB VIEW_POST_SOURCES       "${CMAKE_CURRENT_SOURCE_DIR}/view/post/src/*.cpp")
+file(GLOB VIEW_ADMIN_HEADERS     "${CMAKE_CURRENT_SOURCE_DIR}/view/admin/include/*.h")
+file(GLOB VIEW_ADMIN_SOURCES     "${CMAKE_CURRENT_SOURCE_DIR}/view/admin/src/*.cpp")
 file(GLOB VIEW_MAINWINDOW_HEADERS "${CMAKE_CURRENT_SOURCE_DIR}/view/mainwindow/include/*.h")
 file(GLOB VIEW_MAINWINDOW_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/view/mainwindow/src/*.cpp")
 
@@ -59,6 +62,8 @@ set(PROJECT_SOURCES
     ${VIEW_FRIEND_SOURCES}
     ${VIEW_POST_HEADERS}
     ${VIEW_POST_SOURCES}
+    ${VIEW_ADMIN_HEADERS}
+    ${VIEW_ADMIN_SOURCES}
     ${VIEW_MAINWINDOW_HEADERS}
     ${VIEW_MAINWINDOW_SOURCES}
 )
