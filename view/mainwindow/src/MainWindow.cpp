@@ -3,6 +3,7 @@
 #include "MessageApplication.h"
 #include "AiChatApplication.h"
 #include "PostApplication.h"
+#include "AdminPanel.h"
 #include "CurrentUser.h"
 #include <QScreen>
 #include <QGuiApplication>
@@ -86,6 +87,7 @@ MainWindow::MainWindow(QWidget* parent)
     stack->addWidget(new FriendApplication(this));
     stack->addWidget(new PostApplication(this));
     stack->addWidget(new AiChatApplication(this));
+    stack->addWidget(new AdminPanel(this));
     stack->addWidget(new DefaultPage(this));
     // 默认选中第一个
     stack->setCurrentIndex(0);
